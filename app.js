@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    weatherBase: "http://wthrcdn.etouch.cn/weather_mini"
   }
 })

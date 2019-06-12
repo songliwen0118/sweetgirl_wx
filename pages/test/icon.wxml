@@ -1,0 +1,21 @@
+<view class="viewTitle">
+  <text class="titleName">icon展示</text>
+</view>
+<view class="group">
+  <view>icon大小样式</view>
+  <block wx:for="{{iconSize}}" wx:key="key">
+      <icon type="success" size="{{item}}"/>
+  </block>
+</view>    
+<view class="group">
+  <view>icon类型</view>
+  <block wx:for="{{iconType}}" wx:key="{{iconType}}">
+    <icon type="{{item}}" size="45"/>
+  </block>
+</view>
+<view class="group">
+  <view>icon颜色样式</view>
+  <block wx:for="{{iconColor}}" wx:key="{{iconColor}}">
+    <icon type="success" size="45" color="{{item}}"/>
+  </block>
+</view>

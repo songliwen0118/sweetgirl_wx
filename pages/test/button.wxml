@@ -1,0 +1,27 @@
+<view class="viewTitle">
+    <text class="titleName">button展示</text>
+</view>
+<view class="button-wrapper">
+  <button type="default" size="{{defaultSize}}" loading="{{loading}}"
+   plain="{{plain}}" disabled="{{disabled}}" bindtap="default">默认样式
+  </button>
+</view>
+<view class="button-wrapper">
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}"
+        plain="{{plain}}" disabled="{{disabled}}" bindtap="primary">主要样式
+  </button>
+</view>
+<view class="button-wrapper">
+  <button type="warn" size="{{warnSize}}" loading="{{loading}}"
+        plain="{{plain}}" disabled="{{disabled}}" bindtap="warn">警告样式
+  </button>
+</view>
+<view class="button-wrapper">
+  <button bindtap="setDisabled">点击设置以上按钮不可点击</button>
+</view>
+<view class="button-wrapper">
+  <button bindtap="setPlain">点击设置以上按钮plain样式</button>
+</view>
+<view class="button-wrapper">
+  <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+</view>
