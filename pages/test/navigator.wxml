@@ -1,0 +1,12 @@
+<view class="viewTitle">
+    <text class="titleName">navigator展示</text>
+</view>
+<view class="viewName" style="height:100px">
+  <navigator url="OnePage" hover-class="navigator-hover">
+    <button type="default">跳转到新页面</button>
+  </navigator>
+  <navigator url="TwoPage"
+  redirect hover-class="other-navigator-hover">
+    <button type="default">在当前页打开</button>
+  </navigator>
+</view>

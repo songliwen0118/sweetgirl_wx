@@ -1,0 +1,13 @@
+<view class="viewTitle">
+    <text>progress进度条展示</text>
+</view>
+<view class="section section_gap">
+  <!--显示百分比的样式-->
+  <progress percent="20" show-info/>
+  <!--动画显示的样式-->
+  <progress percent="40" active/>
+  <!--设置宽度的样式-->
+  <progress percent="60" stroke-width="10"/>
+  <!--设置颜色的样式-->
+  <progress percent="80" color="#10AEFF"/>
+</view>

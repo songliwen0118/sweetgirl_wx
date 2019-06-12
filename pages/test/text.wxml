@@ -1,0 +1,10 @@
+<view class="viewTitle">
+  <text class="titleName">text展示</text>
+</view>
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text}}</text>
+    <button bindtap="add">添加文字</button>
+    <button bindtap="remove">减少文字</button>
+  </view>
+</view>

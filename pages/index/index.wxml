@@ -1,13 +1,30 @@
-<!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登陆 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="status">{{status.status}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+</view>
+
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+
+<view class="viewName" style="height:100px">
+  <navigator url="/pages/test/text" hover-class="navigator-hover">
+    <button type="default">text</button>
+  </navigator>
+  <navigator url="/pages/test/icon" hover-class="navigator-hover">
+    <button type="default">icon</button>
+  </navigator>
+  <navigator url="/pages/test/progress" hover-class="navigator-hover">
+    <button type="default">progress</button>
+  </navigator>
+  <navigator url="/pages/test/navigator" hover-class="navigator-hover">
+    <button type="default">navigator</button>
+  </navigator>
+  <navigator url="/pages/test/button" hover-class="navigator-hover">
+    <button type="default">button</button>
+  </navigator>
 </view>
